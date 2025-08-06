@@ -6,17 +6,20 @@
 /*   By: sfiorini <sfiorini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:58:04 by sfiorini          #+#    #+#             */
-/*   Updated: 2025/08/04 16:06:19 by sfiorini         ###   ########.fr       */
+/*   Updated: 2025/08/06 10:35:24 by sfiorini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "easyfind.hpp"
 #include <vector>
+#include "NotFoundException.hpp"
 
 int	main(void)
 {
 	bool mhanz = false;
-	int	a[5] = {1, 2, 3, 4, 5};
+	std::vector<int> a;
+	for (int i = 1; i < 6; i++)
+		a.push_back(i);
 	try
 	{
 		mhanz = easyfind(a, 2); // found

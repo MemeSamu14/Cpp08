@@ -1,0 +1,11 @@
+code . -> sul terminale apre visual studio con il folder di dove ti trovavi nella cartella
+crtl^d con qualcosa di selezionato -> ti cerca nel file e ti aggiunge cursori dove trova una corrispondenza
+crtl^shif + a -> commenta una parte di codice selezionato con /**/
+crtl^/ (solo quello vicino al ctrl destro) -> commenta una parte di codice selezionato //
+crtl^alt +h -> inserisce l'header 42 sul file
+crtl^shift + freccette -> aumenta il numero di cursori
+crtl^shif + f -> attiva la ricerca globale di vs code
+crtl^d -> chiude il terminale
+crtl^~ -> apre il terminale di vs code
+crtl^shift + ~ -> apre un nuovo terminale di vs code
+selezioni una parte di codice e schiacci una parentesi -> ti mette tutto tra parentesi.

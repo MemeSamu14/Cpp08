@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   OutOfRange.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfiorini <sfiorini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 14:01:35 by sfiorini          #+#    #+#             */
-/*   Updated: 2025/08/06 10:49:48 by sfiorini         ###   ########.fr       */
+/*   Created: 2025/08/06 11:13:51 by sfiorini          #+#    #+#             */
+/*   Updated: 2025/08/06 11:35:32 by sfiorini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EASYFIND_HPP
-# define EASYFIND_HPP
+#include "OutOfRange.hpp"
 
-#include <iostream>
-#include <exception>
-#include <algorithm>
-#include <vector>
-#include "NotFoundException.hpp"
-
-class NotFoundException;
-
-template <typename T>
-bool	easyfind(const T&a, int value)
+OutOfRange::OutOfRange()
 {
-	typename T::const_iterator it = std::find(a.begin(), a.end(), value);
-	if (it != a.end())
-		return (true);
-	throw	NotFoundException();
-	return (false);
+	return ;
 }
-#endif
+
+const char* OutOfRange::what() const throw()
+{
+	return ("Errore, out of range or incorrect size");
+}

@@ -1,9 +1,9 @@
-NAME = easyfind
+NAME = span
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -g -std=c++98
 
-SRC = main.cpp NotFoundException.cpp
+SRC = main.cpp Span.cpp OutOfRange.cpp
 
 all: $(NAME) 
 

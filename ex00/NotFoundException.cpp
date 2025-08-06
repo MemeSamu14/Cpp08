@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   NotFoundException.cpp                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sfiorini <sfiorini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 14:01:35 by sfiorini          #+#    #+#             */
-/*   Updated: 2025/08/06 10:49:48 by sfiorini         ###   ########.fr       */
+/*   Created: 2025/08/05 15:50:37 by sfiorini          #+#    #+#             */
+/*   Updated: 2025/08/06 10:31:51 by sfiorini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EASYFIND_HPP
-# define EASYFIND_HPP
-
-#include <iostream>
-#include <exception>
-#include <algorithm>
-#include <vector>
 #include "NotFoundException.hpp"
 
-class NotFoundException;
-
-template <typename T>
-bool	easyfind(const T&a, int value)
+NotFoundException::NotFoundException()
 {
-	typename T::const_iterator it = std::find(a.begin(), a.end(), value);
-	if (it != a.end())
-		return (true);
-	throw	NotFoundException();
-	return (false);
-}
-#endif
+	return ;
+};
+const char* NotFoundException::what() const throw()
+{
+	return ("not found");
+};
