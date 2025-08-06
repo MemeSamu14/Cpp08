@@ -6,7 +6,7 @@
 /*   By: sfiorini <sfiorini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 11:43:25 by sfiorini          #+#    #+#             */
-/*   Updated: 2025/08/06 12:00:14 by sfiorini         ###   ########.fr       */
+/*   Updated: 2025/08/06 13:54:59 by sfiorini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,14 @@ int main()
 {
 	try
 	{
-		Span	a(5);
-		
-		a.addNumber(6);
-		a.addNumber(3);
-		a.addNumber(20);
-		a.addNumber(15);
-	
-		std::cout << "shortest: " << a.shortestSpan() << std::endl;
-		std::cout << "longest: " << a.longestSpan() << std::endl;
+		Span sp = Span(5);
+		sp.addNumber(6);
+		sp.addNumber(3);
+		sp.addNumber(17);
+		sp.addNumber(9);
+		sp.addNumber(11);
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
 	}
 	catch (const OutOfRange &e)
 	{
