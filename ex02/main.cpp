@@ -6,7 +6,7 @@
 /*   By: sfiorini <sfiorini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 13:56:18 by sfiorini          #+#    #+#             */
-/*   Updated: 2025/08/06 18:00:10 by sfiorini         ###   ########.fr       */
+/*   Updated: 2025/08/07 09:36:15 by sfiorini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,15 @@ int main()
 		mstack.push(5);
 		
 		mstack.push(17);
-		// std::cout << "top " << mstack.top() << std::endl;
-		// std::cout << "size " << mstack.size() << std::endl;
-		// 
-		// mstack.pop();
-		// std::cout << "top " << mstack.top() << std::endl;
-		// std::cout << "size " << mstack.size() << std::endl;
-		// mstack.push(3);
-		// mstack.push(5);
-		// mstack.push(737);
+		std::cout << "top " << mstack.top() << std::endl;
+		std::cout << "size " << mstack.size() << std::endl;
+		
+		mstack.pop();
+		std::cout << "top " << mstack.top() << std::endl;
+		std::cout << "size " << mstack.size() << std::endl;
+		mstack.push(3);
+		mstack.push(5);
+		mstack.push(737);
 		mstack.push(0);
 		MutantStack<int>::iterator it = mstack.begin();
 		MutantStack<int>::iterator ite = mstack.end();
